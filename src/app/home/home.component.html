@@ -1,0 +1,13 @@
+
+
+<div class="input-wrapper">
+    <input type="text" [(ngModel)]="taskvalue" />
+    <button (click)="addTask()">Add Task</button>
+</div>
+
+
+
+<div *ngFor="let task of tasks">
+    <app-task taskInput='{{task}}'></app-task>
+</div>
+
